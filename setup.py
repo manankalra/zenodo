@@ -196,6 +196,7 @@ setup(
             'zenodo_xrootd = zenodo.modules.xrootd.ext:ZenodoXRootD',
             'zenodo_jsonschemas = '
             'zenodo.modules.jsonschemas.ext:ZenodoJSONSchemas',
+            'zenodo_webhooks = zenodo.modules.webhooks.ext:ZenodoWebhooks',
             'flask_debugtoolbar = flask_debugtoolbar:DebugToolbarExtension',
         ],
         'invenio_base.api_apps': [
@@ -204,6 +205,7 @@ setup(
             'zenodo.modules.communities.ext:ZenodoCommunities',
             'zenodo_deposit = zenodo.modules.deposit.ext:ZenodoDeposit',
             'zenodo_records = zenodo.modules.records.ext:ZenodoRecords',
+            'zenodo_webhooks = zenodo.modules.webhooks.ext:ZenodoWebhooks',
             'zenodo_xrootd = zenodo.modules.xrootd.ext:ZenodoXRootD',
         ],
         'invenio_base.blueprints': [
@@ -232,6 +234,7 @@ setup(
             'zenodo_records = zenodo.modules.records.tasks',
             'zenodo_utils = zenodo.modules.utils.tasks',
             'zenodo_sipstore = zenodo.modules.sipstore.tasks',
+            'zenodo_webhooks = zenodo.modules.webhooks.tasks',
         ],
         'invenio_pidstore.minters': [
             'zenodo_record_minter '
